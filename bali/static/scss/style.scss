@@ -1,0 +1,44 @@
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: #252C25;
+    span {
+        color: #86A876;
+    }
+}
+
+@import 'reset';
+@import 'ux';
+@import 'header';
+@import 'index';
+@import 'footer';
+@import 'project';
+@import 'arabic';
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 20px;
+        line-height: 130%;
+    }
+}
